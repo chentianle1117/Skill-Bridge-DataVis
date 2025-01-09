@@ -1,7 +1,5 @@
 # Skill-Bridge Data Visualization Interface
 
-![Skill-Bridge Logo](path-to-logo-image)  
-
 **Live Demo:** [Skill-Bridge-DataVis](https://chentianle1117.github.io/Skill-Bridge-DataVis/)
 
 ## Overview
@@ -20,21 +18,15 @@ The labor market is evolving rapidly, driving individuals to acquire new skills 
 
 ### 1. **Interactive Dashboards**
 - **Circular Skill-Job Linkage Graph:** Explore how technical and design skills connect to specific job roles.  
-  ![Circular Skill-Job Linkage Graph](path-to-circular-graph-image)
-
 - **Geographical Distribution Map:** View job concentrations across regions, including remote and on-site roles.  
-  ![GeoMap](path-to-geomap-image)
-
 - **Salary Distribution Analysis:** Compare salaries across tech and design job categories.  
-  ![Salary Distribution](path-to-salary-distribution-image)
-
 ### 2. **Skill-to-Job Connections**
 - Batch-selectable skill-to-job category connections graph highlights relationships between skill sets and job opportunities.  
-  ![Skill-to-Job Connections](path-to-skill-job-graph-image)
-
 ### 3. **Remote vs. On-site Job Analysis**
 - Filter jobs by location to identify remote-friendly roles and understand geographic trends.
 
+![Circular Skill-Job Linkage Graph](https://assets.super.so/5a67847d-7eb5-43aa-9a41-ef8da32c4c16/images/e3ddaf73-0c56-4cfb-be3f-4aef65f5b513/Untitled-video-_12__1.gif?w=706.3333740234375)
+![Skill-to-Job Connections](path-to-skill-job-graph-image)
 ---
 
 ## Key Results
