@@ -1,38 +1,119 @@
-# sv
+# Skill-Bridge Data Visualization Interface
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+![Skill-Bridge Logo](path-to-logo-image)  
 
-## Creating a project
+**Live Demo:** [Skill-Bridge-DataVis](https://chentianle1117.github.io/Skill-Bridge-DataVis/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Overview
 
-```bash
-# create a new project in the current directory
-npx sv create
+This project analyzes job postings to compare tech and design roles, focusing on skill requirements, salaries, and remote availability. It provides an **interactive dashboard** that reveals how these factors interplay across different geographic locations, highlighting where opportunities are most abundant for cross-field job seekers.
 
-# create a new project in my-app
-npx sv create my-app
-```
+---
 
-## Developing
+## Project Context: The Dilemma for Cross-Field Job Seekers
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+The labor market is evolving rapidly, driving individuals to acquire new skills and transition into unfamiliar fields. Cross-field job seekers—those venturing into careers that differ significantly from their previous experience—face challenges aligning their skills with job requirements and navigating the job landscape. This project aims to provide a **data-driven understanding** of job categories, skill requirements, and trends to support these job seekers.
 
-```bash
+---
+
+## Key Features
+
+### 1. **Interactive Dashboards**
+- **Circular Skill-Job Linkage Graph:** Explore how technical and design skills connect to specific job roles.  
+  ![Circular Skill-Job Linkage Graph](path-to-circular-graph-image)
+
+- **Geographical Distribution Map:** View job concentrations across regions, including remote and on-site roles.  
+  ![GeoMap](path-to-geomap-image)
+
+- **Salary Distribution Analysis:** Compare salaries across tech and design job categories.  
+  ![Salary Distribution](path-to-salary-distribution-image)
+
+### 2. **Skill-to-Job Connections**
+- Batch-selectable skill-to-job category connections graph highlights relationships between skill sets and job opportunities.  
+  ![Skill-to-Job Connections](path-to-skill-job-graph-image)
+
+### 3. **Remote vs. On-site Job Analysis**
+- Filter jobs by location to identify remote-friendly roles and understand geographic trends.
+
+---
+
+## Key Results
+
+### Observation 1: Tech vs. Design Skill Requirements
+Tech jobs typically require a broader and more diverse set of skills compared to design jobs. While roles like **Software Engineer** demand both technical and design skills, jobs such as **Interior Designer** emphasize design-specific skills.
+
+### Observation 2: Job Availability and Remote Opportunities
+Tech-related jobs outnumber design jobs and offer significantly more remote positions (~50% vs. ~20%).
+
+### Observation 3: Salary Trends
+Tech roles offer higher average salaries than design roles, with backend and algorithmic jobs commanding the highest pay. Design jobs, especially technical engineering roles, follow closely but have fewer remote opportunities.
+
+---
+
+## Design Decisions
+
+### 1. **Color Coding for Clarity**
+- **Tech Jobs:** Blue  
+- **Design Jobs:** Pink  
+- Skill categories are color-coded to improve visual clarity.
+
+### 2. **Interactive Elements**
+- **Hover:** Highlights specific nodes to reveal detailed insights.  
+- **Multi-select:** Dynamically explore relationships between skills, job categories, and variables.
+
+### 3. **Integrated Dashboard**
+All data dimensions (skills, job categories, geographic distribution, salary) are seamlessly connected to provide a holistic view of the job market.
+
+---
+
+## Technical Details
+
+### Tech Stack
+- **Frontend:** [Svelte](https://svelte.dev/), [D3.js](https://d3js.org/), [JavaScript](https://www.javascript.com/)
+- **Backend:** Data preprocessing with [Python](https://www.python.org/), [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
+- **Visualization:** D3.js for interactive charts, Leaflet.js for maps
+- **Deployment:** GitHub Pages
+
+### Dataset
+- **Source:** LinkedIn Job Postings (2023)  
+- **Categories:** 23 job categories, 9 skill groups  
+- **Scope:** Over 10,000 job postings analyzed
+
+---
+
+## Reflection and Future Work
+
+### Challenges
+- Integrating the skill dashboard with the GeoMap required reconciling differing data structures.  
+- The lack of historical data shifted the project focus to recent job trends.
+
+### Lessons Learned
+- Plan for consistent data sources and reusable components upfront.  
+- Improved collaboration using tools like **Svelte** and **JavaScript** enhances efficiency.
+
+### Next Steps
+- Incorporate long-term data for trend analysis.  
+- Deepen tool proficiency for more complex visualizations and storytelling.
+
+---
+
+## How to Use
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/chentianle1117/Skill-Bridge-DataVis.git
+Install Dependencies
+
+bash
+Copy code
+npm install
+Run the Development Server
+
+bash
+Copy code
 npm run dev
+View in Browser Open http://localhost:3000 to explore the dashboard locally.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Contributors
+David Chen - Data Preprocessing, GeoMap Integration
+Risa Xie - Circular Graph Design, Skill Dashboard Development
