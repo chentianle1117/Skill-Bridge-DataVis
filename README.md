@@ -2,6 +2,9 @@
 
 **Live Demo:** [Skill-Bridge-DataVis](https://chentianle1117.github.io/Skill-Bridge-DataVis/)
 
+![Circular Skill-Job Linkage Graph](https://assets.super.so/5a67847d-7eb5-43aa-9a41-ef8da32c4c16/images/e3ddaf73-0c56-4cfb-be3f-4aef65f5b513/Untitled-video-_12__1.gif?w=706.3333740234375)
+![Skill-to-Job Connections](https://assets.super.so/5a67847d-7eb5-43aa-9a41-ef8da32c4c16/images/b2e80692-7f81-4057-b091-9bac1c950808/Untitled-video-_13_.gif?w=706.3333740234375)
+
 ## Overview
 
 This project analyzes job postings to compare tech and design roles, focusing on skill requirements, salaries, and remote availability. It provides an **interactive dashboard** that reveals how these factors interplay across different geographic locations, highlighting where opportunities are most abundant for cross-field job seekers.
@@ -24,9 +27,6 @@ The labor market is evolving rapidly, driving individuals to acquire new skills 
 - Batch-selectable skill-to-job category connections graph highlights relationships between skill sets and job opportunities.  
 ### 3. **Remote vs. On-site Job Analysis**
 - Filter jobs by location to identify remote-friendly roles and understand geographic trends.
-
-![Circular Skill-Job Linkage Graph](https://assets.super.so/5a67847d-7eb5-43aa-9a41-ef8da32c4c16/images/e3ddaf73-0c56-4cfb-be3f-4aef65f5b513/Untitled-video-_12__1.gif?w=706.3333740234375)
-![Skill-to-Job Connections](path-to-skill-job-graph-image)
 ---
 
 ## Key Results
